@@ -1,0 +1,19 @@
+::root{
+  font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+//! Base
+@import "../assets/typography";
+@import "../assets/variables";
+@import "../assets/functions";
+
+
+//! partials
+@import "sass-partials/header"; 
