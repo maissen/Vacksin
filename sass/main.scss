@@ -17,3 +17,30 @@
 
 //! partials
 @import "sass-partials/header"; 
+
+body{
+  background: $primary-color-3;
+}
+
+.adabtable-container{
+  margin: auto;
+  @media screen and (max-width: 576px) { /* Styles for mobile devices */
+    width: 93%;
+  }
+  @media screen and (min-width: 577px) { /* Styles for mobile devices */
+    width: 92%;
+  }
+  @media screen and (min-width: 768px) { /* Styles for mobile devices */
+    width: 89%;
+  }
+  @media screen and (min-width: 992px) { /* Styles for mobile devices */
+    width: 85%;
+  }
+  @media screen and (min-width: 1200px) { /* Styles for mobile devices */
+    width: 80%;
+  }
+}
+
+.badge{
+  @include badge($primary-color-1);
+}

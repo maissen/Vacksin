@@ -1,8 +1,10 @@
 //? colors
-$primary-color-1: #3c7de4;
-$primary-color-2: #18325f;
+$primary-color-1: #2b9cec;
+$primary-color-2: #0f405b;
+$primary-color-2-hover: lighten($primary-color-2, 10%);
 $primary-color-3: #f6f9fe;
 $primary-color-4: #fff;
+$primary-color-5: #7c7c7c;
 
 //? Typography
 $primary-font-family: 'Roboto', sans-serif;
@@ -73,12 +75,15 @@ $fs-4: 1.5rem;
     font-size: calc($fs-1 + .9rem);
   }
   .fs-2{
-    font-size: calc($fs-2 + .9rem);
+    font-size: calc($fs-2 + .6rem);
   }
   .fs-3{
-    font-size: calc($fs-3 + .9rem);
+    font-size: calc($fs-3 + .6rem);
   }
   .fs-4{
-    font-size: calc($fs-4 + .9rem);
+    font-size: calc($fs-4 + .6rem);
   }
 }
+
+//? other --
+$transition: .3s;

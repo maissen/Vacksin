@@ -1,0 +1,25 @@
+@mixin action-button(){
+    display: inline-block;
+    background: $primary-color-2;
+    color: white;
+    padding: 1rem 1.6rem;
+    border-radius: 2rem;
+    transition: background-color $transition;
+    text-decoration: none;
+
+    &:hover{
+        background: $primary-color-2-hover;
+    }
+}
+
+@mixin badge($bg-color){
+    padding: 1rem 1.4rem;
+    border-radius: 2rem;
+    backdrop-filter: blur(3px);
+    background: rgba($bg-color, .1);
+    display: inline-block;
+
+    & i{
+        margin-right: .5rem;
+    }
+}

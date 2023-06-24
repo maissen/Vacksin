@@ -1,0 +1,128 @@
+.header{
+    height: 100vh;
+
+    .navbar{
+        font-family: $primary-font-family;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: .8rem 0;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+
+        &__logo{
+            display: inherit;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+
+            div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img{
+                    height: 50px;
+                }
+                p{
+                    margin-left: 1rem;
+                    color: $primary-color-1;
+                    font-weight: bold;
+                }
+            }
+
+
+            button{
+                color: $primary-color-5;
+                transition: color $transition;
+                padding: 1rem 1.4rem;
+                background: none;
+                border: none;
+                cursor: pointer;
+                transition: color $transition;
+            }
+        }
+
+        &__links{
+            display: none;
+            flex-direction: column;
+            text-align: center;
+            position: absolute;
+            top: 100%;
+            width: 100vw;
+            padding: 0 1rem 1rem 1rem;
+            background: rgba($primary-color-4, .4);
+            backdrop-filter: blur(9px);
+            z-index: 1000;
+
+            a{
+                text-decoration: none;
+                color: $primary-color-5;
+                transition: color $transition;
+                padding: 1rem 1.4rem;
+
+                &:hover{
+                    color: $primary-color-1;
+                }
+
+                &:nth-child(5){
+                    @include action-button();
+                }
+            }
+        }
+
+        .active__liks_list{
+            display: flex !important;
+        }
+
+        @media screen and (min-width: 577px){
+
+        }
+    }
+
+    .badge{
+        @include badge($primary-color-1);
+        color: $primary-color-1;
+        font-size: 17px;
+        margin-bottom: 1rem;
+    }
+
+    .header__content{
+        font-family: $primary-font-family;
+        padding: 2rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: cetner;
+        flex-direction: column;
+
+        &__text{
+            flex-grow: 2;
+            text-align: center;
+
+            h1{
+                color: $primary-color-2;
+            }
+            p{
+                font-size: 17px;
+                margin: 2rem 0;
+                color: $primary-color-5;
+            }
+
+            a{
+                @include action-button();
+            }
+        }
+
+        &__img {
+            width: 80%;
+            margin: auto;
+            margin-top: 3rem;
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+    
+}
