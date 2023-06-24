@@ -23,24 +23,27 @@ body{
 }
 
 .adabtable-container{
-  margin: auto;
   @media screen and (max-width: 576px) { /* Styles for mobile devices */
-    width: 93%;
+    padding: 0 3.5% !important;
   }
   @media screen and (min-width: 577px) { /* Styles for mobile devices */
-    width: 92%;
+    padding: 0 4% !important;
   }
   @media screen and (min-width: 768px) { /* Styles for mobile devices */
-    width: 89%;
+    padding: 0 5.5% !important;
   }
   @media screen and (min-width: 992px) { /* Styles for mobile devices */
-    width: 85%;
+    padding:  0 7.5% !important;
   }
   @media screen and (min-width: 1200px) { /* Styles for mobile devices */
-    width: 80%;
+    padding:  0 10% !important;
   }
 }
 
-.badge{
-  @include badge($primary-color-1);
+.active__liks_list{
+  display: flex !important;
+}
+.nav_links_scroll{
+  box-shadow: 0px -3px 37px 0px #565656a1;
+  background: $primary-color-3;
 }
