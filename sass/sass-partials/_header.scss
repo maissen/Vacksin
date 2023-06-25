@@ -120,14 +120,21 @@
             }
             .badge:nth-child(1){
                 @include badge(#e2e2e2, .8);
-                bottom: 20%;
-                left: -26%;
+                bottom: 30%;
+                left: -9%;
+
+                
             }
             .badge:nth-child(2){
                 @include badge(#e2e2e2, .8);
-                bottom: 10%;
+                bottom: -12%;
                 right: -10%;
                 width: 12rem;
+
+                @media screen and (min-width: 992px){
+                    bottom: -2%;
+                    right: -4%;
+                }
             }
         }
     }
