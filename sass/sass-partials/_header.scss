@@ -1,6 +1,4 @@
 .header{
-    height: 200vh;
-
     .navbar{
         font-family: $primary-font-family;
         display: flex;
@@ -81,7 +79,7 @@
 
     .header__content{
         font-family: $primary-font-family;
-        padding: 6rem 0 2rem 0;
+        padding: 6rem 0 4rem 0;
         display: flex;
         justify-content: space-between;
         align-items: cetner;

@@ -14,3 +14,13 @@ window.onscroll = function(){
     header_badge[1].style.transform = 'translateY(' + -window.scrollY-500 + 'px)';
     header_badge[2].style.transform = 'translateY(' - window.scrollY/1.4 + 'px)';
 }
+
+var cards = document.querySelectorAll('.box');
+for(let i = 0; i < cards.length; i++){
+    cards[i].querySelector('button').onclick = function(){
+        for(let j = 0; j < cards.length; j++){
+            cards[j].classList.remove('active_box');
+        }
+        cards[i].classList.add('active_box');
+    }
+} 

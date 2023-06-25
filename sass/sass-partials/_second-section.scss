@@ -1,0 +1,88 @@
+#second-section{
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+
+    .top{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        text-align: center;
+        margin-bottom: 2rem;
+
+        @media screen and (min-width: 992px){
+            &{
+                text-align: left;
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        h1{
+            color: $primary-color-2;
+        }
+        p{
+            color: $primary-color-5;
+            margin: 2rem 0;
+        }
+    }
+
+    .bottom{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: flex-end;
+
+        @media screen and (min-width: 768px){
+            &{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media screen and (min-width: 1092px){
+            &{
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .box{
+            border: 2px solid lightgray;
+            border-radius: 2.4rem 5rem 2.4rem 2.4rem;
+            padding: 2rem;
+            margin: 0 .7rem;
+            margin-bottom: 2rem;
+            transition: $transition;
+
+            &:hover{
+                border-color: $primary-color-1;
+            }
+
+            & > i{
+                padding: 1.3rem;
+                background: $primary-color-4;
+                color: $primary-color-1;
+                border-radius: 2rem;
+                margin-bottom: 1.5rem;
+                font-size: 2.2rem;
+            }
+
+            &__title{
+                color: $primary-color-2;
+                margin-bottom: 1.5rem;
+            }
+
+            &__content{
+                margin-bottom: 1.5rem;
+                color: $primary-color-3;
+                display: none;
+            }
+
+            &__btn{
+                background: none;
+                color: $primary-color-2;
+                border: none;
+                cursor: pointer;
+
+                i{
+                    margin-left: .3rem;
+                }
+            }
+        }
+    }
+}
