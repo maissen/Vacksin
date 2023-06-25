@@ -42,7 +42,7 @@
                 background: none;
                 border: none;
                 cursor: pointer;
-                transition: color $transition;
+                font-size: 1.3rem;
         }
 
         &__links{
@@ -87,7 +87,7 @@
 
       @media screen and (min-width: 992px){
         bottom: -2%;
-        right: -4%;
+        right: -9%;
       }
     }
 }

@@ -8,11 +8,6 @@ window.onscroll = function(){
     }else{
         document.getElementsByClassName('navbar')[0].classList.remove('nav_links_scroll');
     }
-
-    var header_badge = document.querySelectorAll('header .badge');
-    header_badge[0].style.transform = 'translateY(' + window.scrollY/3 + 'px)';
-    header_badge[1].style.transform = 'translateY(' + -window.scrollY-500 + 'px)';
-    header_badge[2].style.transform = 'translateY(' - window.scrollY/1.4 + 'px)';
 }
 
 var cards = document.querySelectorAll('.box');
