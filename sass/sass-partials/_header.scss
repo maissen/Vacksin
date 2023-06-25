@@ -4,7 +4,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        padding: .8rem 0 .4rem 0;
+        padding: .8rem 0 .8rem 0;
         position: fixed;
         width: 100vw;
         top: 0;
@@ -76,70 +76,20 @@
         font-size: 17px;
         margin-bottom: 1rem;
     }
-
-    .header__content{
-        font-family: $primary-font-family;
-        padding: 6rem 0 4rem 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: cetner;
-        flex-direction: column;
-
-        &__text{
-            flex-grow: 2;
-            text-align: center;
-
-            h1{
-                color: $primary-color-2;
-            }
-            p{
-                font-size: 17px;
-                margin: 2rem 0;
-                color: $primary-color-5;
-            }
-
-            a{
-                @include action-button();
-            }
-        }
-
-        &__img {
-            width: 80%;
-            margin: auto;
-            margin-top: 3rem;
-            position: relative;
-
-            img{
-                width: 100%;
-            }
-
-            .badge{
-                position: absolute;
-                font-size: 14px;
-                color: #3a3939;
-            }
-            .badge:nth-child(1){
-                @include badge(#e2e2e2, .8);
-                bottom: 30%;
-                left: -9%;
-
-                
-            }
-            .badge:nth-child(2){
-                @include badge(#e2e2e2, .8);
-                bottom: -12%;
-                right: -10%;
-                width: 12rem;
-
-                @media screen and (min-width: 992px){
-                    bottom: -2%;
-                    right: -4%;
-                }
-            }
-        }
+    .badge:nth-child(1){
+      bottom: 30%;
+      left: -9%;            
     }
-    
+    .badge:nth-child(2){
+      bottom: -12%;
+      right: -10%;
+      width: 12rem;
 
+      @media screen and (min-width: 992px){
+        bottom: -2%;
+        right: -4%;
+      }
+    }
 }
 
 @media screen and (min-width: 768px){
@@ -161,65 +111,6 @@
             }
             button{
                 display: none;
-            }
-        }
-
-        &__content{
-            &__img{
-                width: 48% !important;
-
-                img{
-                    width: 100%;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (min-width: 992px){
-    .header{
-        &__content{
-            flex-direction: row !important;
-            padding-top: 8rem !important;
-
-            &__text{
-                text-align: left !important;
-                padding-right: 5rem;
-            }
-
-            &__img{
-                width: 70% !important;
-
-                img{
-                    width: 100%;
-                }
-
-                .badge:nth-child(1){
-                    bottom: 24% !important;
-                    left: -10% !important;
-                }
-                .badge:nth-child(2){
-                    bottom: 10%;
-                    right: -10%;
-                    width: 12rem;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (min-width: 1200px){
-    .header{
-        &__content{
-            flex-direction: row !important;
-            padding-top: 8rem !important;
-
-            &__text{
-                padding-right: 2rem;
-            }
-
-            &__img{
-                width: 50% !important;
             }
         }
     }

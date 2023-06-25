@@ -1,0 +1,35 @@
+#third-section{
+    .badge:first-child{
+        bottom: 27%;
+        left: -4%;
+        i{
+            margin: 0 .2rem;
+            color: goldenrod;
+        }
+    }
+    .badge:nth-child(2){
+        width: auto;
+        bottom: 10%;
+        right: -6%;
+    }
+
+    div.boxs{
+        display: flex;
+
+        .box{
+            padding: .5rem .8rem;
+            text-align: left;
+
+            i{
+                color: $primary-color-1;
+                padding: .5rem;
+                border-radius: 50%;
+                background-color: rgba($primary-color-1, .1);
+            }
+
+            p{
+                margin-top: 1rem;
+            }
+        }
+    }
+}
