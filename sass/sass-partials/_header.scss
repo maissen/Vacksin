@@ -65,6 +65,7 @@
 
                 &:nth-child(5){
                     @include action-button();
+                    margin-right: 1.5rem;
                 }
             }
         }
