@@ -2,6 +2,8 @@
     .badge:first-child{
         bottom: 27%;
         left: -4%;
+        animation: floating-animation 5s linear infinite;         
+
         i{
             margin: 0 .2rem;
             color: goldenrod;
@@ -11,6 +13,7 @@
         width: auto;
         bottom: 10%;
         right: -6%;
+        animation: floating-animation 7.5s linear infinite;         
     }
 
     div.boxs{

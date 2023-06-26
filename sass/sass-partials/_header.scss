@@ -76,19 +76,23 @@
         font-size: 17px;
         margin-bottom: 1rem;
     }
-    .badge:nth-child(1){
-      bottom: 30%;
-      left: -9%;            
-    }
-    .badge:nth-child(2){
-      bottom: -12%;
-      right: -10%;
-      width: 12rem;
+    .content__img{
+        .badge:nth-child(1){
+            bottom: 30%;
+            left: -9%;   
+            animation: floating-animation 5s linear infinite;         
+        }
+        .badge:nth-child(2){
+            bottom: -12%;
+            right: -10%;
+            width: 12rem;
+            animation: floating-animation 7.5s linear infinite;
 
-      @media screen and (min-width: 992px){
-        bottom: -2%;
-        right: -9%;
-      }
+            @media screen and (min-width: 992px){
+                bottom: -2%;
+                right: -9%;
+            }
+        }
     }
 }
 
