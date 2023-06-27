@@ -1,4 +1,5 @@
 .header{
+
     .navbar{
         font-family: $primary-font-family;
         display: flex;
@@ -77,6 +78,10 @@
         font-size: 17px;
         margin-bottom: 1rem;
     }
+    .content{
+        position: relative;
+        z-index: 1;
+    }
     .content__img{
         .badge:nth-child(1){
             bottom: 30%;
@@ -94,6 +99,19 @@
                 right: -9%;
             }
         }
+    }
+
+    .blur-circle{
+        position: absolute;
+        height: 50rem;
+        width: 50rem;
+        border-radius: 50%;
+        top: -50%;
+        left: -40%;
+        background: radial-gradient(rgba($primary-color-1, .5), lighten(rgba($primary-color-1, .5), 30%));
+        // box-shadow: 0 0 5px 10rem lighten($primary-color-1, 30%);
+        filter: blur(150px);
+        z-index: 0;
     }
 }
 
